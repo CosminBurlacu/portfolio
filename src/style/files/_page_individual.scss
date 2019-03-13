@@ -1,0 +1,123 @@
+.page__individual {
+    width:100%;
+    // height:100vh;
+    // min-height:100vh;
+    position: relative;
+    background-color:#f3f3f3;
+    // height:auto;
+
+    &--loader {
+        width:100%;
+        height:100vh;
+        position:fixed;
+        top:0;
+        left:0;
+        background-color:#f3f3f3;
+        // background-color:limegreen;
+        z-index:99;
+        animation: animationIndividualLoader 3.2s ease-in-out forwards;
+        display: grid;
+        align-items:center;
+        justify-items:center;
+
+        h2 {
+            font-size:3.2rem;
+            font-weight:900;
+        }
+    }
+
+    &--content {
+        font-size:2.1rem;
+        width:65vw;
+        position:absolute;
+        left:50%;
+        top:0;
+        transform:translateX(-50%);
+        // border:2px solid lightgrey;
+        border-radius:0.45rem;
+
+        @media screen and(max-width:545px) {
+            width:98vw;
+        }
+
+        .projectIndividualElement {
+            width:100%;
+            // height:100vh;
+
+            @media screen and(width:545px) {
+                .individualProject {
+                    height:45vh;
+                }
+            }
+
+            h2 {
+                width:100%;
+                height:100vh;
+                display:grid;
+                align-items:center;
+                justify-items:center;
+                font-size:3.2rem;
+            }
+
+            img {
+                width:100%;
+            }
+        }
+        
+        @media screen and(width:545px) {
+            .individualProject {
+                height:45vh;
+            }
+        }
+    }
+
+    &--sider {
+        width:6.5rem;
+        border-radius:0.45rem;
+        right:0;
+        top:50%;
+        transform:translateY(-50%);
+        display:grid;
+        align-items:center;
+        grid-row-gap:1.4rem;
+        justify-items:center;
+        position:fixed;
+        // height:65vh;
+        // border:2px solid lightgrey;
+        // grid-template-rows:repeat(4, 0.9rem);
+        // position:absolute;
+
+        .projectsDotsNumerotation {
+            width:0.7rem;
+            height:0.7rem;
+            background-color:darkgrey;
+            border-radius:50%;
+
+            &:not(:first-child) {
+                margin-top:1.4rem;
+            }
+        }
+    }
+
+    .close__pageIndividual {
+        width:2.1rem;
+        height:2.1rem;
+        transition:all 0.45s ease-in-out;
+        position:fixed;
+        top:2.1rem;
+        right:2.1rem;
+
+        svg {
+            width:2.1rem;
+            height:2.1rem;
+            fill:black;
+            cursor: pointer;
+            transition:all 0.45s ease-in-out;   
+
+            &:hover {
+                background-color:black;
+                fill:white;
+            }
+        }
+    }
+}

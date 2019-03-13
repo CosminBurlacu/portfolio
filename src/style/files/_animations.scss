@@ -1,0 +1,276 @@
+@keyframes animationProjectNames {
+    from {
+        opacity:0;
+        left:-19rem;
+    }
+    to {
+        opacity:1;
+        left:-9rem;
+    }
+}
+
+@keyframes animationProjectImage {
+from {
+    opacity:0;
+    visibility: hidden;
+    filter:brightness(0);
+}
+to {
+    opacity:1;
+    visibility: visible;
+    filter:brightness(100%);
+}
+    // 0% {
+    //     opacity:0;
+    //     visibility: hidden;
+    //     filter:brightness(0);
+    // }
+    // 25% {
+    //     opacity:0.25;
+    //     visibility: visible;
+    //     filter:brightness(20%); 
+    // }
+    // 50% {
+    //     opacity:0.50;
+    //     visibility: visible;
+    //     filter:brightness(50%); 
+    // }
+    // 75% {
+    //     opacity:0.75;
+    //     visibility: visible;
+    //     filter:brightness(75%);  
+    // }
+    // 100% {
+    //     opacity:1;
+    //     visibility: visible;
+    //     filter:brightness(100%);
+    // }
+}
+
+@keyframes slideMenus {
+    0% {
+        width:0;
+    }
+
+    100% {
+        width:100%
+    }
+}
+
+@keyframes show__portfolio {
+    0% {
+        width:0;
+        // display:hidden;
+        // background-color:var(--color__white);
+    }
+
+    50% {
+        width:100%;
+        opacity:0;
+        // display:grid;
+        // background-color:black;
+    }
+
+    100% {
+        // width:0;
+        opacity:0;
+        display:none;
+    }
+}
+
+@keyframes show__project {
+    0% {
+        width:0;
+    }
+
+    50% {
+        width:100%;
+        opacity:1;
+    }
+
+    100% {
+        opacity:1;
+        display:none;
+    }
+}
+
+@keyframes projects__slide {
+    0% {
+        height:0;
+    }
+    
+    50% {
+        height:100vh;
+    }
+
+    75% {
+        opacity:0.9;
+    }
+
+    100% {
+        opacity:0;
+    }
+}
+
+@keyframes display__content {
+    0% {
+        opacity:0;
+        // display:none;
+    }
+
+    100% {
+        opacity:1;
+        // display:block;
+    }
+}
+
+@keyframes animate__circles {
+    0% {
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    
+    100% {
+        transform:translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes individual__circles {
+    0% {
+        width:32rem;
+        height:32rem;
+        transform:rotate(0deg);
+        border-radius:360%;
+    }
+    
+    25% {
+        width:39rem;
+        transform:rotate(25deg);
+        top:-9rem;
+        left:-5rem;
+        border-radius:120rem;
+    }
+    
+    50% {
+        width:32rem;
+        height:45rem;
+        transform:rotate(95deg);
+        border-radius:90rem;
+    }
+    
+    75% {
+        width:19rem;
+        height:21rem;
+        top:-12rem;
+        left:-21rem;
+        transform:rotate(125deg);
+        border-radius:245rem;
+    }
+
+    100% {
+        width:32rem;
+        height:32rem;
+        top:-19rem;
+        left:-32rem;
+        border-radius:360%;
+    }
+}
+
+@keyframes individual__circles2 {
+    0% {
+        width:32rem;
+        height:32rem;
+        transform:rotate(0deg);
+        border-radius:360%;
+    }
+    
+    25% {
+        width:39rem;
+        transform:rotate(25deg);
+        bottom:-9rem;
+        right:-5rem;
+        border-radius:45rem;
+    }
+    
+    50% {
+        width:32rem;
+        height:45rem;
+        transform:rotate(95deg);
+        border-radius:120rem;
+    }
+    
+    75% {
+        width:19rem;
+        height:21rem;
+        bottom:-12rem;
+        right:-21rem;
+        transform:rotate(125deg);
+        border-radius:245rem;
+    }
+
+    100% {
+        width:32rem;
+        height:32rem;
+        bottom:-19rem;
+        right:-32rem;
+        border-radius:360%;
+    }
+}
+
+@keyframes slide__imageCover {
+    0% {
+        width:100%
+    }
+
+    100% {
+        width:0;
+    }
+}
+
+@keyframes slide__textCover {
+    0% {
+        width:100%;
+    }
+
+    100% {
+        width:0;
+    }
+}
+
+@keyframes show__imageContact {
+    0% {
+        display:none;
+    }
+
+    100% {
+        display:block; 
+    }
+}
+
+@keyframes animationIndividualLoader {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+
+// @keyframes slideAboutTitles {
+//     from {
+//         bottom:-32rem;
+//         opacity:0;
+//     }
+//     to {
+//         bottom:0;
+//         opacity:1;
+//     }
+// }
+
+// @keyframes slideSecondTitle {
+//     from {
+//         bottom:-32rem;
+//     }
+//     to {
+//         bottom:0;
+//     }
+// }
